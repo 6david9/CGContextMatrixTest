@@ -45,7 +45,7 @@
     CGContextSetTextPosition(context, 0, 0);
     NSAttributedString *str1 = [[NSAttributedString alloc] initWithString:@"line 1"
                                                                attributes:@{NSFontAttributeName:[self suggestedFont]}];
-    CTLineRef line1 = CTLineCreateWithAttributedString((__bridge_retained CFAttributedStringRef)str1);
+    CTLineRef line1 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)str1);
     CTLineDraw(line1, context);
     
     CGFloat ascent1 = 0.0, descent1 = 0.0, leading1 = 0.0;
@@ -54,7 +54,7 @@
 
     NSAttributedString *str2 = [[NSAttributedString alloc] initWithString:@"line 2"
                                                                attributes:@{NSFontAttributeName:[self suggestedFont]}];
-    CTLineRef line2 = CTLineCreateWithAttributedString((__bridge_retained CFAttributedStringRef)str2);
+    CTLineRef line2 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)str2);
     CTLineDraw(line2, context);
     
     CFRelease(line1);
@@ -70,7 +70,7 @@
     CGContextSetTextPosition(context, 70, 0);
     NSAttributedString *str3 = [[NSAttributedString alloc] initWithString:@"line 3"
                                                                attributes:@{NSFontAttributeName:[self suggestedFont]}];
-    CTLineRef line3 = CTLineCreateWithAttributedString((__bridge_retained CFAttributedStringRef)str3);
+    CTLineRef line3 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)str3);
     CTLineDraw(line3, context);
     
     CGFloat ascent2 = 0.0, descent2 = 0.0, leading2 = 0.0;
@@ -79,7 +79,7 @@
     
     NSAttributedString *str4 = [[NSAttributedString alloc] initWithString:@"line 4"
                                                                attributes:@{NSFontAttributeName:[self suggestedFont]}];
-    CTLineRef line4 = CTLineCreateWithAttributedString((__bridge_retained CFAttributedStringRef)str4);
+    CTLineRef line4 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)str4);
     CTLineDraw(line4, context);
     
     CFRelease(line3);
